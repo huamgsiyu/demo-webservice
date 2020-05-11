@@ -21,7 +21,7 @@ public class JaxWsDynamicClientFactoryTest {
         // 需要密码的情况需要加上用户名和密码
         // client.getOutInterceptors().add(new ClientLoginInterceptor(USER_NAME, PASS_WORD));
         try {
-            Object[] params = new Object[]{"RandolphChin"};
+            Object[] params = new Object[]{"hello"};
 
             // 设置调用服务超时时间，默认大概70秒
             HTTPConduit conduit = (HTTPConduit) client.getConduit();

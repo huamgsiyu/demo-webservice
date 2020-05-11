@@ -8,11 +8,29 @@ package cn.randy.chin.webservice.enums;
  */
 public enum ResultStatus {
 
+    /**
+     *  成功
+     */
     SUCCESS(0, "成功"),
+    /**
+     *  请求信息不存在
+     */
     FAILD(-2, "请求信息不存在"),
+    /**
+     *  系统异常
+     */
     EXCEPTION(-1, "系统异常"),
+    /**
+     *  deleted
+     */
     DEL_SUCCESS(1, "deleted"),
+    /**
+     *  not_found
+     */
     NOT_FOUND(-3, "not_found"),
+    /**
+     *  系统错误
+     */
     SYSTEM_ERROR(10001, "系统错误");
 
 
@@ -48,6 +66,7 @@ public enum ResultStatus {
         return this.name();
     }
 
+    @Override
     public String toString() {
         return this.getName();
     }

@@ -14,6 +14,7 @@ public class AbstractResult {
     private String message;
 
     public AbstractResult() {  }
+
     protected AbstractResult(ResultStatus status, String message) {
         this.code = status.getCode();
         this.status = status;

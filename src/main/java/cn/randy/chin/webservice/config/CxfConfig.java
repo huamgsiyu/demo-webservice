@@ -12,6 +12,9 @@ import org.springframework.context.annotation.Configuration;
 
 import javax.xml.ws.Endpoint;
 
+/**
+ * @author HSY
+ */
 @Configuration
 public class CxfConfig {
 
@@ -35,6 +38,5 @@ public class CxfConfig {
         EndpointImpl endpoint = new EndpointImpl(springBus(),demoService());
         endpoint.publish("/api");
         return endpoint;
-
     }
 }
